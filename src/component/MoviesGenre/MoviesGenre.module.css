@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+.body {
+    background-color: black;
+    display: flex;
+    padding-right: 20px;
+    min-height: 110vh;
+    overflow: hidden;
+}
+
+.right {
+    width: 40vw;
+    max-height: 80vh;
+    max-width: 50vw;
+    padding-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left {
+    width: 50vw;
+    height: 80vh;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 5rem;
+    color: green;
+    font-family: "Single Day", cursive;
+}
+
+.subHeading {
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+    margin-top: 4vh;
+}
+
+.nextBtn {
+    color: white;
+    background: green;
+    border-radius: 18px;
+    border: none;
+    padding: 0.7rem 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-45%,160%)
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.left>div {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selectedGenre {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.selectedGenre>p {
+    background: #148A08;
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    border-radius: 10rem;
+}
+.selectedGenre>span {
+    transform: translate(-250%, 15%);
+    cursor: pointer;
+}
+

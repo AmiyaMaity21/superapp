@@ -1,0 +1,46 @@
+.moviesContainer {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+    max-height: 100vh
+}
+
+.avatar {
+    position: absolute;
+    top: 2vh;
+    right: 3vw;
+    height: 60px;
+    width: 60px
+}
+
+.header {
+    color: green !important;
+    font-size: 3rem !important;
+    font-family: "Single Day", cursive;
+    margin: 1rem 1.5rem !important
+}
+
+.moviesContainer h2 {
+    color: white;
+    margin: 1rem 4rem;
+}
+
+.moviesContainer p {
+    color: #878787;
+    margin: 0 4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.moviesList {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.movieCard {
+    border-radius: 12px;
+    height: 220px;
+    width: 200px;
+}

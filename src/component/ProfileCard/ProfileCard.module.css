@@ -1,0 +1,36 @@
+.profileContainer {
+    width: 32vw;
+    min-height: 40vh;
+    color: white;
+    background-color: #5746EA;
+    border-radius: 12px;
+    padding: 6px 0px 6px 16px;
+    display: flex;
+    gap:2rem;
+}
+
+.avatarIcon {
+    height: 37vh;
+    width: 7vw;
+    position: relative;
+    top: 1rem;
+}
+
+.profileDetails {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.genresList {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.genresList>p {
+    background: #9F94FF;
+    padding: 0.5rem 3rem 0.5rem 1.5rem;
+    border-radius: 6rem;
+}

@@ -1,0 +1,29 @@
+.notesection {
+    width: 24vw;
+    height: 55vh;
+    color: white;
+    background-color: #F1C75B;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+}
+
+.notesection p {
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.notesection textarea {
+    width: 24vw;
+    height: 45vh;
+    margin: 1.5rem auto;
+    font-size: 1.2rem;
+    border: none;
+    background: transparent;
+    outline: 0;
+    resize: none;
+    box-sizing: border-box;
+    overflow-y: auto; 
+    scrollbar-width: none;  
+}
