@@ -7,16 +7,18 @@ const Movies = () => {
   const navigate = useNavigate();
   const [movies, setMovies] = useState([]);
   let genreDetails = localStorage.getItem("genre");
-  console.log(genreDetails);
 
   if (genreDetails) {
     genreDetails = genreDetails.split(",");
   }
-  console.log(genreDetails);
 
   useEffect(() => {
+    if (!genreDetails) {
+      navigate("/genre");
+      return;
+    }
     fetchMoviesListByTitle(genreDetails[1]);
-  }, [genreDetails]);
+  }, [genreDetails, navigate]);
 
   const fetchMoviesListByTitle = async (title) => {
     const result = await getMoviesList(title);
@@ -24,13 +26,10 @@ const Movies = () => {
     setMovies(requiredResult);
   };
 
-  function handleNavigate() {
-    navigate("/");
-  }
   return (
     <>
       <div className={styles.moviesContainer}>
-        <div onClick={handleNavigate}>
+        <div onClick={() => navigate("/")}>
           <img className={styles.avatar} src={Profile} alt="movie cover" />
         </div>
         <p className={styles.header}>Super app</p>
