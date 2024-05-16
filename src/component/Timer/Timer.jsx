@@ -9,7 +9,7 @@ const Timer = () => {
     const [seconds, setSeconds] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [hours, setHours] = useState(0);
-    const [isTimerStarted, setIsTimerStarted] = useState(true);
+    const [isTimerStarted, setIsTimerStarted] = useState(false);
     const [timeInSeconds, setTimeInSeconds] = useState(0);
     const incrementHour = () => {
         setHours((prev) => prev + 1);
